@@ -1,0 +1,49 @@
+* {
+}
+
+#main {
+  height: 100vh;
+  width: 100%;
+}
+
+#header {
+  width: 100%;
+  height: 20%;
+
+  border: 1px solid black;
+}
+
+#footer {
+  width: 100%;
+  height: 20%;
+ 
+  border: 1px solid black;
+}
+
+#content {
+  width: 100%;
+  height: 80%;
+  
+  border: 1px solid black;
+}
+
+#logo {
+  height: 100%;
+  width: 20%;
+  border: 1px solid black;
+  background-color: blue;
+  float: left;
+ 
+}
+
+#title {
+  height: 100%;
+  width: 78%;
+  border: 1px solid black;
+  background-color: aqua;
+  float: right;
+}
+
+img{
+    margin-left: 20px;
+}

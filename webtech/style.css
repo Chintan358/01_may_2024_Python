@@ -1,13 +1,12 @@
 * {
   background-color: aquamarine;
-  font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
-  fo
+  font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
 }
 
 th {
-    background-color: blue;
+  background-color: blue;
 }
 
-td{
-    background-color: rebeccapurple;
+td {
+  background-color: rebeccapurple;
 }
