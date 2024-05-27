@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script>
+        // alert("hello")
+        // confirm("okay")
+        //prompt("enter your name")
+
+        function test() {
+
+            var a = document.getElementsByTagName("h1")[0]
+            var b = document.getElementsByTagName("h1")[1]
+
+            a.style.color = "red"
+            b.style.color = "green"
+        }
+
+        function test1() {
+
+            var a = document.getElementsByTagName("h1")[0]
+            var b = document.getElementsByTagName("h1")[1]
+
+            a.style.color = "green"
+            b.style.color = "red"
+        }
+
+        function run() {
+            var a = document.getElementById("uname")
+
+            a.style.backgroundColor = "aqua"
+            a.style.color = "red"
+            a.style.width = "200px"
+            a.style.height = "30px"
+        }
+
+        function run1() {
+            var a = document.getElementById("uname")
+
+            a.style.backgroundColor = ""
+            a.style.color = ""
+            a.style.width = ""
+            a.style.height = ""
+        }
+
+        function data() {
+            var a = document.getElementById("uname").value
+            
+            document.getElementById("data").innerHTML = a
+        }
+
+
+        function add()
+        {
+            var a = document.getElementById("a").value
+            var b = document.getElementById("b").value
+            var r = document.getElementById("result")
+
+            r.innerHTML = Number(a)+Number(b)
+        }
+
+        function mul()
+        {
+            var a = document.getElementById("a").value
+            var b = document.getElementById("b").value
+            var r = document.getElementById("result")
+
+            r.innerHTML = Number(a)*Number(b)
+        }
+
+        function div()
+        {
+            var a = document.getElementById("a").value
+            var b = document.getElementById("b").value
+            var r = document.getElementById("result")
+
+            r.innerHTML = Number(a)/Number(b)
+        }
+
+        function sub()
+        {
+            var a = document.getElementById("a").value
+            var b = document.getElementById("b").value
+            var r = document.getElementById("result")
+
+            r.innerHTML = Number(a)-Number(b)
+        }
+    </script>
+</head>
+
+<body>
+    <h1 onmouseover="test()" onmouseout="test1()">Tops technologies</h1>
+    <h1 onmouseover="test()" onmouseout="test1()">Tops Surat</h1>
+
+
+    <input type="text" name="uname" id="uname" onclick="run()" onblur="run1()" onkeyup="data()">
+    <span id="data"></span>
+
+    <br>
+    <br>
+
+    <input type="text" id="a">
+    <input type="text" id="b">
+    <span id="result"></span>
+<br>
+<br>
+    <button onmouseover="add()">ADD</button>
+    <button onmouseover="sub()">SUB</button>
+    <button onmouseover="mul()">MUL</button>
+    <button onmouseover="div()">DIV</button>
+
+</body>
+
+</html>
